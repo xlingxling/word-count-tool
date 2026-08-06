@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文字字数统计 · 实用小工具</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>文字字数统计</h1>
+    <p class="subtitle">把文字粘贴到下面，自动统计字数、字符数和行数</p>
+
+    <div class="input-wrapper">
+      <textarea id="input" placeholder="在这里粘贴或输入文字…" spellcheck="false"></textarea>
+      <button id="clearBtn" type="button">清空</button>
+    </div>
+
+    <div class="stats">
+      <div class="stat-box">
+        <span class="stat-number" id="wordCount">0</span>
+        <span class="stat-label">字数</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number" id="charCount">0</span>
+        <span class="stat-label">字符数</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number" id="lineCount">0</span>
+        <span class="stat-label">行数</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

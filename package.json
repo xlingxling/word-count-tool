@@ -1,0 +1,8 @@
+{
+  "name": "teach-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node -e \"var http=require('http'),fs=require('fs'),path=require('path');http.createServer(function(req,res){var i=req.url.indexOf('?');if(i>=0)req.url=req.url.slice(0,i);if(req.url==='/')req.url='/index.html';var f=path.join(process.cwd(),req.url);fs.readFile(f,function(e,d){if(e){res.writeHead(404);res.end('404')}else{res.writeHead(200);res.end(d)}})}).listen(8000)\""
+  }
+}
